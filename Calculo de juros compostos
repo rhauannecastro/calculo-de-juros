@@ -1,0 +1,36 @@
+'''Calculo de juros compostos'''
+'''mediante a programação de linguagem Python'''
+''' data do programa: 25/05/2022'''
+'''Programador: Rhauanne Castro'''
+
+taxa = 6
+montante = 5000
+txt = "Calcule o montante de um capital inicial de R${0},00 á taxa de {1}% ao trimestre no periodo de um ano utilizando o sistema de juros compostos"
+print(txt.format(montante, taxa))
+
+c = 5000
+txt = "c ={}"
+print(txt.format(c))
+i = 0.06
+txt = "i ={}"
+print(txt.format(i))
+t = 4
+txt = "t ={}"
+print(txt.format(t))
+print("aplicando a na fórmula")
+print("M = C*((1 + I)^T)")
+
+c = 5000
+i = 0.06
+t = 4
+print("Respostas")
+
+print("Valor do juros:")
+juros = c*((1 + i)**t)
+print(juros)
+
+print("Valor a pagar:")
+vlr_apagar = c + juros
+print(vlr_apagar)
+
+'''site para rodar: https://www.programiz.com/python-programming/online-compiler/'''
